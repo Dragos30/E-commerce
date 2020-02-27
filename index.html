@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>What's this?</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="My vision website, representing my passion and experience for painting and web development">
+   <link rel="stylesheet" href="CSS/app.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add font awesome icons -->
+
+ </head>
+ <body>
+    <div class="intro" >
+<p id="text">Art & Style</p>
+    </div>
+</header>
+  <div class="topnav" id="myTopnav">
+    <a href="#part1">Story</a>
+    <a href="#part2">Portfolio</a>
+    <a href="#part3">Shopping Cart</a>
+    <a href="#part4">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div> 
+ 
+<!-- <a href="https://fb.me/dragosvision" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/justmedragos"
+class="fa fa-instagram"></a> -->
+<h1>Story</h1>
+<div class="box" id="part1">
+  <div id="backgroundMe">
+  <div id="me"></div>
+</div>
+<i class="fa fa-shopping-cart fa-2x" aria-hidden="true" id="cart-img"  ><a id="goCart" href="#part3">Go to cart!</a></i>
+<span id="itemCount"></span>
+  <p class="intro1"><br>&nbsp;&nbsp;I am happy to have the honour of introducing you to my world of colours.</br>
+<br>&nbsp;&nbsp;I always knew there is something missing in my life and when I discovered painting everything changed.</br><br>&nbsp;&nbsp; I can now say I am fulfilled.</br>
+  <br>&nbsp;&nbsp;It all started in the winter of 2018 when I was struggling to find myself.</br>
+  <br>&nbsp;&nbsp; Since then I've done over 40 paintings.</br>&nbsp;&nbsp;Each and every one of them with a story of its own.<br/>
+  <br>&nbsp;&nbsp;I hope you will also enjoy my imagination transposed on canvas.</br>
+</p>
+</div>
+<h1>Splashes on canvas</h1>
+<div id="part2"> 
+<div class="port1">
+<div class="card" id="card1">
+<div class="cardNumber" >1 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Paint1.jpg"   style="width: 90%" height="30%">
+<div class="cardText" ><br>Light & Dark</br>
+<div class="cardPrice" ><br>10$</br></div>
+<br>21,0 x 29,7 cm</br></div>
+<button class="item_add" id="addItem" onclick="addItemToCart1()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+
+<div class="card" id="card2">
+<div class="cardNumber">2 / 32</div>
+<img class="cardProduct" source src="CSS/images/Paintings/Paint2.jpg"   style="width: 80%" height="30%">
+<div class="cardText"><br>Autumn</br>
+<div class="cardPrice"><br>20$</br></div>
+<br>21,0 x 29,7 cm</br></div>
+<button class="item_add" id="addItem2" onclick="addItemToCart2()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+
+<div class="card">
+<div class="cardNumber">3 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Paint3.jpg" style="width: 80%"  height="30%">
+<div class="cardText"><br>Paradise<br>
+<div class="cardPrice"><br>30$</br></div>
+<br>21,0 x 29,7 cm</br></div>
+<button class="item_add" id="addItem3" onclick="addItemToCart3()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+
+<div class="card">
+<div class="cardNumber">4 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Paint4.jpg"   style="width: 80%"  height="30%">
+<div class="cardText"><br>The road to nowhere</br>
+<div class="cardPrice"><br>40$</br></div>  
+<br>21,0 x 29,7 cm</br></div>
+<button class="item_add" id="addItem4" onclick="addItemToCart4()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+</div>
+<div class="port2">
+<div class="card">
+<div class="cardNumber">5 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Paint5.jpg"  style="width: 80%"  height="30%">
+<div class="cardText"><br>Sunny day<br>
+<div class="cardPrice"><br>50$</br></div>
+<br>21,0 x 29,7 cm</br></div>
+<button class="item_add" id="addItem5" onclick="addItemToCart5()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">6 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Paint6.jpg"   style="width: 80%" height="30%">
+<div class="cardText"><br>The past</br>
+<div class="cardPrice"><br>60$</br></div>  
+<br>21,0 x 29,7 cm</br></div>
+<button class="item_add" id="addItem6" onclick="addItemToCart6()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">7 / 32</div>
+<img class="cartProduct" src="CSS/images/Paintings/paint7.jpg"  style="width: 80%"  height="30%">
+<div class="cardText"><br>The light in Prague</br>
+<div class="cardPrice"><br>70$</br></div>  
+<br>29,7 x 42,0 cm </br></div>
+<button class="item_add" id="addItem7" onclick="addItemToCart7()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">8 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Winter world2.jpg"   style="width: 80%"  height="30%">
+<div class="cardText"><br>Winter world</br>
+<div class="cardPrice"><br>80$</br></div>  
+<br>29,7 x 42,0 cm </br></div>
+<button class="item_add" id="addItem8" onclick="addItemToCart8()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+</div>
+<div class="port3">
+<div class="card">
+<div class="cardNumber">9 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Arctic colours.jpg"  style="width: 80%"  height="30%">
+<div class="cardText"><br>Arctic colours</br>
+<div class="cardPrice"><br>90$</br></div>  
+<br>29,7 x 42,0 cm </br></div>
+<button class="item_add" id="addItem9" onclick="addItemToCart9()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">10 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/The Shine.jpg"   style="width: 80%"  height="30%">
+<div class="cardText"><br>The Shine</br>
+<div class="cardPrice"><br>100$</br></div>  
+<br>29,7 x 42,0 cm </br></div>
+<button class="item_add" id="addItem10" onclick="addItemToCart10()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">11 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/The Mind Beyond2.jpg"   style="width: 80%" height="30%">
+<div class="cardText"><br>The Mind Beyond</br>
+<br>29,7 x 42,0 cm </br><br>SOLD</br></div>
+</div>
+<div class="card">
+<div class="cardNumber">12 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Worlds End.jpg"   style="width: 80%"  height="30%">
+<div class="cardText"><br>Worlds End</br>
+<div class="cardPrice"><br>110$</br></div>
+<br>29,7 x 42,0 cm</br><br>Streched canvas board</br></div>
+<button class="item_add" id="addItem11" onclick="addItemToCart11()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+</div>
+<div class="port4">
+<div class="card">
+<div class="cardNumber"> 13 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/The Roots.jpg"   style="width: 80%"  height="30%">
+<div class="cardText"><br>The Roots</br>
+<br>29,7 x 42,0 cm </br><br>SOLD</br></div>
+</div>
+<div class="card">
+<div class="cardNumber">14 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/The all seeing eye2.jpg" style="width: 80%"  height="30%">
+<div class="cardText"><br>The all seeing eye</br>
+<div class="cardPrice"><br>120$</br></div>
+<br>21,0 x 29,7 cm </br></div>
+<button class="item_add" id="addItem12" onclick="addItemToCart12()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">15 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/The Night.jpg"   style="width: 80%"  height="30%">
+<div class="cardText"><br>The Night</br>
+<div class="cardPrice"><br>130$</br></div>
+<br>29,7 x 42,0 cm </br></div>
+<button class="item_add" id="addItem13" onclick="addItemToCart13()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">16 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/The Fall2.jpg"   style="width: 80%"  height="30%">
+<div class="cardText"><br>The Fall</br>
+<div class="cardPrice"><br>140$</br></div>
+<br>21,0 x 29,7 cm</br></div>
+<button class="item_add" id="addItem14" onclick="addItemToCart14()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+</div>
+<div class="port5">
+<div class="card">
+<div class="cardNumber">17 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Sunset2.jpg"   style="width: 80%" height="30%">
+<div class="cardText"><br>Sunset</br>
+<div class="cardPrice"><br>150$</br></div>
+<br>21,0 x 29,7 cm </br></div>
+<button class="item_add" id="addItem15" onclick="addItemToCart15()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">18 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Waterfall2.jpg"  style="width: 80%"  height="30%">
+<div class="cardText"><br>Waterfall</br>
+<div class="cardPrice"><br>160$</br></div>
+<br>21,0 x 29,7 cm</br></div>
+<button class="item_add" id="addItem16" onclick="addItemToCart16()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="card">
+<div class="cardNumber">19 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Sunday Walk2.jpg"  style="width: 80%"  height="30%">
+<div class="cardText"><br>Sunday Walk</br>
+<div class="cardPrice"><br>170$</br></div>
+<br>21,0 x 29,7 cm 42,0 cm </br></div>
+<button class="item_add" id="addItem17" onclick="addItemToCart17()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">20 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Park way2.jpg"  style="width: 80%"  height="30%">
+<div class="cardText"><br>Park way</br>
+<div class="cardPrice"><br>180$</br></div>
+<br>21,0 x 29,7 cm </br></div>
+<button class="item_add" id="addItem18" onclick="addItemToCart18()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+</div>
+<div class="port6">
+<div class="card">
+<div class="cardNumber">21 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Beach2.jpg" style="width: 80%"  height="30%">
+<div class="cardText"><br>Beach</br>
+<div class="cardPrice"><br>190$</br></div>
+<br>21,0 x 29,7 cm </br></div>
+<button class="item_add" id="addItem19" onclick="addItemToCart19()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">22 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Forest2.jpg"  style="width: 80%" height="30%">
+<div class="cardText"><br>Forest</br>
+<div class="cardPrice"><br>200$</br></div>
+<br>21,0 x 29,7 cm </br></div>
+<button class="item_add" id="addItem20" onclick="addItemToCart20()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">23 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/From Above2.jpg"   style="width: 80%"  height="30%">
+<div class="cardText"><br>From Above</br>
+<div class="cardPrice"><br>210$</br></div>
+<br>21,0 x 29,7 cm </br></div>
+<button class="item_add" id="addItem21" onclick="addItemToCart21()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">24 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/High in the clouds2.jpg" style="width: 80%"  height="30%">
+<div class="cardText"><br>High in the clouds</br>
+<div class="cardPrice"><br>220$</br></div>
+<br>21,0 x 29,7 cm </br></div>
+<button class="item_add" id="addItem22" onclick="addItemToCart22()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+</div>
+<div class="port7">
+<div class="card">
+<div class="cardNumber">25 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Exotic Sunset2.jpg"   style="width: 80%"  height="30%">
+<div class="cardText"><br>Exotic Sunset</br>
+<div class="cardPrice"><br>230$</br></div>
+<br>21,0 x 29,7 cm </br></div>
+<button class="item_add" id="addItem23" onclick="addItemToCart23()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">26 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Durdle Door.jpg"  style="width: 80%"  height="30%">
+<div class="cardText"><br>Durdle Door</br>
+<div class="cardPrice"><br>240$</br></div>
+<br>21,0 x 29,7 cm</br></div>
+<button class="item_add" id="addItem24" onclick="addItemToCart24()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">27 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Moonlight2.jpg"  style="width:100%" height="30%">
+<div class="cardText"><br>Moonlight</br>
+<div class="cardPrice"><br>250$</br></div>
+<br>21,0 x 29,7 cm</br></div>
+<button class="item_add" id="addItem25" onclick="addItemToCart25()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">28 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Fireplace2.jpg"  style="width: 80%"  height="30%">
+<div class="cardText"><br>Fireplace</br>
+<div class="cardPrice"><br>260$</br></div>
+<br>21,0 x 29,7 cm</br></div>
+<button class="item_add" id="addItem26" onclick="addItemToCart26()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+</div>
+<div class="port8">
+<div class="card">
+<div class="cardNumber">29 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/The Path2.jpg"   style="width: 80%"  height="30%">
+<div class="cardText"><br>The Path</br>
+<div class="cardPrice"><br>270$</br></div>
+<br>29,7 x 42,0 cm </br></div>
+<button class="item_add" id="addItem27" onclick="addItemToCart27()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">30 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/The ghost.jpg"   style="width: 80%"  height="30%">
+<div class="cardText"><br>The Ghost</br>
+<div class="cardPrice"><br>280$</br></div>
+<br>21,0 x 29,7 cm </br></div>
+<button class="item_add" id="addItem28" onclick="addItemToCart28()" href="javascript:;"> Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">31 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/The spartan.jpg"  style="width: 80%"  height="30%">
+<div class="cardText"><br>The Spartan</br>
+<div class="cardPrice"><br>290$</br></div>
+<br>29,7 x 42,0 cm </br></div>
+<button class="item_add" id="addItem29" onclick="addItemToCart29()" href="javascript:;" > Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+<div class="card">
+<div class="cardNumber">32 / 32</div>
+<img class="cardProduct" src="CSS/images/Paintings/Melting.jpg"  style="width: 80%"  height="30%">
+<div class="cardText"><br>Melting</br>
+<div class="cardPrice"><br>300$</br></div>
+<br>29,7 x 42,0 cm </br></div>
+<button class="item_add" id="addItem30" onclick="addItemToCart30()" href="javascript:;" > Add to Cart<i class="fa fa-shopping-cart"></i> </button>
+</div>
+</div>
+</div>
+<div id="part3">
+<div id="cart">
+  <h1>Your Shopping Cart</h1>
+</div>
+<button onclick="popUp()" id="calc" class="myBtn" type="button">
+  Total to pay</button>
+  
+  <span class="popuptext" id="sum"></span>
+<button class="clear">Empty Cart</button>
+</div>
+<button type="button" id="complete" href="#part5">
+  Proceed to payment</button>
+  <div id="part5">
+    <h1> Checkout Form</h1>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+</div>
+  </div>
+  </div>
+<div id="part4">
+  <h1>Contact</h1>
+  <div id="form-background">
+    <div id="form" class="form">
+        <form name="contactform" method="post" action="send_form_email.php">
+  <tr>
+   <td valign="top">
+    <label class="label" for="first_name">First Name *</label>
+   </td>
+   <td valign="top">
+    <input class="input" type="text" name="first_name" maxlength="50" size="30">
+   </td>
+  </tr>
+  <tr>
+   <td valign="top">
+    <label class="label" for="last_name">Last Name *</label>
+   </td>
+   <td valign="top">
+    <input class="input" type="text" name="last_name" maxlength="50" size="30">
+   </td>
+  </tr>
+  <tr>
+   <td valign="top">
+    <label class="label" for="email">Email Address *</label>
+   </td>
+   <td valign="top">
+    <input class="input" type="text" name="email" maxlength="80" size="30">
+   </td>
+  </tr>
+  <tr>
+   <td valign="top">
+    <label class="label" for="telephone">Telephone Number</label>
+   </td>
+   <td valign="top">
+    <input class="input" type="text" name="telephone" maxlength="30" size="30">
+   </td>
+  </tr>
+  <tr>
+   <td valign="top">
+    <label class="label" for="comments">Comments *</label>
+   </td>
+   <td valign="top">
+    <textarea class="input" name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" style="text-align:center">
+    <input class="input" id="button" type="submit" value="Submit">
+   </td>
+  </tr>
+  </div>
+</div>
+</div>
+<div id="social">
+  <a href="https://fb.me/dragosvision" 
+  class="fa fa-facebook" id="fb"></a>
+  <a href="https://www.instagram.com/justmedragos"
+ class="fa fa-instagram" id="insta"></a>
+</div>
+</div>
+
+<div class="topnav-footer">
+  
+      <a href="#part1">Home</a>
+      <a href="#part2">Portfolio</a>
+      <a href="#part3">Shopping Cart</a>
+      <a href="#part4">Contact</a>
+</div>
+<footer class="footer">
+  <p id="company"> Copyright &copy; 2019 Finit LTD.<br> All rights reserved. <br>&nbsp; &nbsp; Website by: FinIT LTD<br></p>
+<img class="footer-image" src="css/images/Logo.jpg">
+ </footer>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="js/app.js" type="text/javascript"></script>
+</script>
+</div>
+ </body>
+</html>
